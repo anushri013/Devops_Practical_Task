@@ -26,6 +26,7 @@ Follow the steps below to set up the infrastructure using Terraform and deploy t
      cd DevOps-Practical-Task
      
 3. Install Terraform:
+   
    Terraform installed on your local development environment. If you haven't installed it yet, download it from the official website: [Terraform Downloads](https://www.terraform.io/downloads.html).
 
 5. Set up AWS credentials or IAM role:
