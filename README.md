@@ -59,7 +59,7 @@ Follow the steps below to set up the infrastructure using Terraform and deploy t
 
    export AWS_ACCESS_KEY_ID="your_access_key"
    export AWS_SECRET_ACCESS_KEY="your_secret_key"
-   export AWS_DEFAULT_REGION="us-west-2" # Replace with your desired AWS region
+   export AWS_DEFAULT_REGION="us-east-1" 
    
 # Dockerization of the Sample Spring Boot Application
 
