@@ -26,34 +26,36 @@ Follow the steps below to set up the infrastructure using Terraform and deploy t
      cd DevOps-Practical-Task
      
 3. Install Terraform:
+   Terraform installed on your local development environment. If you haven't installed it yet, download it from the official website: [Terraform Downloads](https://www.terraform.io/downloads.html).
 
-4. Set up AWS credentials or IAM role:
+5. Set up AWS credentials or IAM role:
 
    - Ensure you have an AWS account and necessary permissions to create resources (EKS cluster, VPC, subnets, etc.).
    - set up AWS credentials on your local machine using the AWS CLI or configure an IAM role with the required permissions and associate it with your EC2 instance (if you're running Terraform on an EC2 instance).
 
-5. Create a Terraform configuration file:
+6. Create a Terraform configuration file:
 
    - Create a file in the root directory of your cloned repository.
    - In that files defined the Terraform resources needed to set up an EKS cluster, VPC, subnets, security groups, and EKS nodes. 
 
-6. Terraform Initialization and Deployment:
+7. Terraform Initialization and Deployment:
 
    - Run the following commands to initialize Terraform and apply the configuration to create the EKS cluster:
 
-     terraform init
-     terraform apply
+      terraform init
      
-7. Retrieve EKS Cluster Details:
+      terraform apply
+     
+8. Retrieve EKS Cluster Details:
 
    - After Terraform has successfully created the EKS cluster, it will display the output containing the EKS cluster details.
    - Make sure to capture and save these details for later use.
 
-8. Store Sensitive Information Securely:
+9. Store Sensitive Information Securely:
 
    - Store sensitive information such as AWS access keys and secrets as environment variables.
      
-9. Set up Environment Variables:
+10. Set up Environment Variables:
 
    - For Terraform configuration and later parts of the pipeline, set up environment variables for necessary information like AWS credentials, EKS cluster endpoint, etc.
 
