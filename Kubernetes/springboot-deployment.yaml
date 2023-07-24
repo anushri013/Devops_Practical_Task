@@ -1,0 +1,26 @@
+---
+# Deployment Manifest
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-spring-boot-app-deployment
+  labels:
+    app: spring-boot-app
+spec:
+  replicas: 4  # Number of replicas for Blue-Green deployment
+  strategy:
+    type: Blue-Green deployment
+  selector:
+    matchLabels:
+      app: spring-boot-app
+  template:
+    metadata:
+      labels:
+        app: spring-boot-app
+    spec:
+      containers:
+        - name: spring-boot-app
+          image: 531788722200.dkr.ecr.us-east-1.amazonaws.com/my-spring-boot-app  
+          ports:
+            - containerPort: 8080
+
